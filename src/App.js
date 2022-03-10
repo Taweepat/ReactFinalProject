@@ -13,6 +13,7 @@ import { useState , useEffect } from 'react'
 import rootReducer from "./Redux/Reducers/index";
 import {createStore} from 'redux'
 import { Provider } from "react-redux";
+import ResumePage from "./Pages/ResumePage";
 
 const store = createStore(rootReducer);
 
@@ -61,6 +62,7 @@ function App() {
         <Switching>
           <Route path="/" exact><HomePage/></Route>
           <Route path="/about" exact><AboutPage/></Route>
+          <Route path="/resume" exact><ResumePage/></Route>
 
           <Route path='/product' ><ProductPage /></Route>
           <Route path='/cart' ><Cartpage /></Route>
