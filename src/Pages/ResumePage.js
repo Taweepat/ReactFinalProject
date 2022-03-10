@@ -14,7 +14,7 @@ import Resume from '../Components/Resume'
 
 const ResumePage = () => {
   return (
-    <>
+    <div>
     <MainLayout>
       <Title title={'My Skills'} span={'my skills'} />
       <InnerLayout>
@@ -49,11 +49,14 @@ const ResumePage = () => {
       <Title title={'Education'} span={'Education'} />
       <Resume/>
     </MainLayout>
-  </>   
+  </div>   
   )
 }
 
 const ResumeStyled = styled.div`  
+.Boxs{
+   backgroundColor: var( --primary-color-light)
+}
 `
 
 

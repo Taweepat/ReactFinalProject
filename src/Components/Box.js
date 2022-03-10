@@ -7,7 +7,8 @@ const useStyle = makeStyles({
 
     root:{
         "& img":{
-            width:"100%"
+            width:"100%",
+            height:"300px"
         }
     }
 })
@@ -17,7 +18,7 @@ const Boxs = (props) => {
   const { img, text} = props;
   return (
     <Box className={classes.root}>
-      <Card sx={{width: '90%', marginBottom:5 ,  height:'90%'  , boxShadow: 24  ,  border: '2px solid #C2C2C2'}}  >
+      <Card >
       <CardContent  sx={{textAlign:'center'}}>
         <Typography >
         <img src={img}/>
