@@ -22,29 +22,29 @@ const iconLine = lineIcon
         <InnerLayout>
           <Title title={'Contact Me'} span={'Contact Me'}/>
           <InnerLayout> 
-          <Grid container spacing={2}>
-       <Grid item xs={6} md={6}>
+          <Grid container spacing={1}>
+       <Grid item xs={5} md={5}>
          <Box width={'100%'}>
             <Paper className='boxcontact'>
               <img src={iconTel}/><span>Tel. 063-880-4558</span>
             </Paper>
           </Box>
        </Grid>
-       <Grid item xs={6} md={6}>
+       <Grid item xs={5} md={5}>
        <Box width={'100%'}>
             <Paper className='boxcontact'>
               <img src={iconEmail}/><span>mu.taweepat_st@tni.ac.th</span>
             </Paper>
           </Box>
        </Grid>
-       <Grid item xs={6} md={6}>
+       <Grid item xs={5} md={5}>
        <Box width={'100%'}>
             <Paper className='boxcontact'>
               <img src={iconDis}/><span>FAR#4299</span>
             </Paper>
           </Box>
        </Grid>
-       <Grid item xs={6} md={6}>
+       <Grid item xs={5} md={5}>
        <Box width={'100%'}>
             <Paper className='boxcontact'>
               <img src={iconLine}/><span>Vocaloidfa</span>
