@@ -9,6 +9,7 @@ import visualimg from '../img/visual-studio.png'
 import eclipseimg from '../img/eclipse.png'
 import Photoshopimg from '../img/Photoshop.png'
 import twofellow from '../img/2fellows.jpg'
+import Resume from '../Components/Resume'
 
 
 const ResumePage = () => {
@@ -45,6 +46,8 @@ const ResumePage = () => {
        </Grid>
        </Grid>
       </InnerLayout>
+      <Title title={'Education'} span={'Education'} />
+      <Resume/>
     </MainLayout>
   </>   
   )
@@ -52,18 +55,6 @@ const ResumePage = () => {
 
 const ResumeStyled = styled.div`  
 `
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-  textAlign:'center'
-};
 
 
 export default ResumePage

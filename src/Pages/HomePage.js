@@ -9,7 +9,7 @@ const HomePage = () => {
     <HomePageStyled>
         <div className='typography'>
             <h1>Hi I'm <span>Taweepat Muangrod</span></h1>
-            <p> -- That's Cool!!!! --</p>
+            <p> you only fail when you stop trying.</p>
             <div className='icons'>
                 <div className='icon i-facebook'><FacebookIcon/></div>
                 <div className='icon i-github'><GitHubIcon/></div>

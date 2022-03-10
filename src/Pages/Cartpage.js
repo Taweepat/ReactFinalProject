@@ -20,7 +20,7 @@ const Cartpage = () => {
        <Title title={'Cart'} span={'Cart'} />
       </InnerLayout>
       
-        <TableContainer component={Paper} sx={{width:'95%' , backgroundColor:'#D3D3D3' , marginLeft:5}}>
+        <TableContainer component={Paper} sx={{width:'95%' , marginLeft:5}}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     
                  

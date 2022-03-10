@@ -4,7 +4,7 @@ import Title from '../Components/Title'
 import { MainLayout , InnerLayout } from '../styles/Layout'
 import { Image,Badge,Spinner,Button } from "react-bootstrap";
 import axios from "axios";
-import { BsFillLightningFill } from "react-icons/bs";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -73,11 +73,10 @@ const addCart = (p) => {const product = {id: p.id, name: p.title , price: p.view
   return (
     <>
     <MainLayout>
+       <Title title={'PRODUCT'} span={'PRODUCT'} />
       <InnerLayout>
-       <Title title={'About me'} span={'About me'} />
-      </InnerLayout>
 
-      <TableContainer component={Paper} sx={{ width:'95%' , backgroundColor:'#D3D3D3' , marginLeft:5}}> 
+      <TableContainer component={Paper} sx={{ width:'95%' , marginLeft:5}}> 
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <Table striped bordered hover>
             <TableHead>
@@ -93,27 +92,29 @@ const addCart = (p) => {const product = {id: p.id, name: p.title , price: p.view
             </TableHead>
             <TableBody>
             {
-
-                product.map((p, index) => {
-                    return (
-                        <TableRow key={p.id}>
+              
+              product.map((p, index) => {
+                return (
+                  <TableRow key={p.id}>
                             <TableCell>{p.id}</TableCell>
                             <TableCell>{p.title}</TableCell>
                             <TableCell>{p.detail}</TableCell>
                             <TableCell>{p.date}</TableCell>
                             <TableCell><Badge variant="primary">{p.view}</Badge></TableCell>
                             <TableCell><Image src={p.picture} rounded width={60}/></TableCell>
-                            <TableCell><Button  variant="dark" onClick={() =>addCart(p)}>Buy<BsFillLightningFill/> </Button></TableCell>
+                            <TableCell><Button  variant="dark" onClick={() =>addCart(p)}>Buy<AiOutlineShoppingCart/> </Button></TableCell>
                         </TableRow>
                     )
-
-                })
-            }
+                    
+                  })
+                }
             </TableBody>
           </Table>
       </Table>
     </TableContainer>
+    </InnerLayout>
     </MainLayout>
+                
 
     </>
   )

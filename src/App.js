@@ -14,6 +14,7 @@ import rootReducer from "./Redux/Reducers/index";
 import {createStore} from 'redux'
 import { Provider } from "react-redux";
 import ResumePage from "./Pages/ResumePage";
+import ContactPage from "./Pages/ContactPage";
 
 const store = createStore(rootReducer);
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/" exact><HomePage/></Route>
           <Route path="/about" exact><AboutPage/></Route>
           <Route path="/resume" exact><ResumePage/></Route>
+          <Route path="/contact" exact><ContactPage/></Route>
 
           <Route path='/product' ><ProductPage /></Route>
           <Route path='/cart' ><Cartpage /></Route>
