@@ -11,9 +11,9 @@ const HomePage = () => {
             <h1>Hi I'm <span>Taweepat Muangrod</span></h1>
             <p> you only fail when you stop trying.</p>
             <div className='icons'>
-                <div className='icon i-facebook'><FacebookIcon/></div>
-                <div className='icon i-github'><GitHubIcon/></div>
-                <div className='icon i-youtube'><YoutubeIcon/></div>
+            <a href="https://www.facebook.com/Vocaloidfa/"><div className='icon i-facebook'><FacebookIcon/></div></a>
+            <a href="https://github.com/Taweepat/">   <div className='icon i-github'><GitHubIcon/></div></a>
+            <a href="https://www.instagram.com/tw_far/">   <div className='icon i-youtube'><YoutubeIcon/></div></a>
             </div>  
         </div>
     </HomePageStyled>
@@ -54,6 +54,9 @@ const HomePageStyled = styled.header`
                 }
                 svg{
                     margin: .5rem;
+                }
+                a{
+                    padding : 2px;
                 }
             }
 

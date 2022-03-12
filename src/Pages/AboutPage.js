@@ -13,7 +13,7 @@ const AboutPage = () => {
           <Title title={"About Me"} span={"About Me"} />
           <AboutPageStyled>
           <div className="left-content">
-            <img src={profile} alt="my profile" />
+            <img src={profile} alt="" />
           </div>
           <div className="right-content">
             <div className="about-info">
@@ -22,18 +22,16 @@ const AboutPage = () => {
                 <p>NickName</p>
                 <p>Age</p>
                 <p>Nationality </p>
-                <p>Languages </p>
                 <p>University</p>
                 <p>Faculty</p>
               </div>
               <div className="info">
-                <p>: Taweepat Muangrod </p>
-                <p>: Far</p>
-                <p>: 24</p>
-                <p>: Thailand </p>
-                <p>: Thai</p>
-                <p>: Thai-Nichi Institute of Technology</p>
-                <p>: Information Technology (IT)</p>
+                <p>► Taweepat Muangrod </p>
+                <p>► Far</p>
+                <p>► 24</p>
+                <p>► Thailand </p>
+                <p>► Thai-Nichi Institute of Technology</p>
+                <p>► Information Technology (IT)</p>
               </div>
             </div>
           </div>
@@ -54,9 +52,9 @@ const AboutPageStyled = styled.div`
     }
   }
   .left-content {
-    width: 100%;
+    width: 80%;
     img {
-      width: 95%;
+      width: 90%;
       object-fit: cover;
     }
   }
